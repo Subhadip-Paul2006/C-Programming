@@ -6,6 +6,13 @@
 int queue[MAX];
 int front = -1, rear = -1;
 
+int isFull();
+int isEmpty();
+void enqueue(int value);
+void dequeue(int dequeue);
+void peek();
+void display();
+
 // Check if queue is full
 int isFull() {
     return (front == (rear + 1) % MAX);
